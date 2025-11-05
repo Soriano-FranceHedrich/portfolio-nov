@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Naveen Daphney H. Apigo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#5EEAD4',
+                        accentPurple: '#A78BFA',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-poppins transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                    Naveen Daphney
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Home</a>
+                    <a href="about.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">About</a>
+                    <a href="projects.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Projects</a>
+                    <a href="skills.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Skills</a>
+                    <a href="education.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Education</a>
+                    <a href="contact.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Contact</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 nav-link">Home</a>
+                <a href="about.html" class="block py-2 nav-link">About</a>
+                <a href="projects.html" class="block py-2 nav-link">Projects</a>
+                <a href="skills.html" class="block py-2 nav-link">Skills</a>
+                <a href="education.html" class="block py-2 nav-link">Education</a>
+                <a href="contact.html" class="block py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-gray-50 dark:bg-gray-800 min-h-screen pt-32">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Graphic Design Tools -->
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-6 text-center">
+                        <i class="fas fa-palette text-accent dark:text-accentPurple mr-2"></i>
+                        Graphic Design Tools
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Adobe Photoshop</span>
+                                <span class="text-gray-600 dark:text-gray-400">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Adobe Illustrator</span>
+                                <span class="text-gray-600 dark:text-gray-400">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Figma</span>
+                                <span class="text-gray-600 dark:text-gray-400">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Canva</span>
+                                <span class="text-gray-600 dark:text-gray-400">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-6 text-center">
+                        <i class="fas fa-code text-accent dark:text-accentPurple mr-2"></i>
+                        Web Development
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">HTML</span>
+                                <span class="text-gray-600 dark:text-gray-400">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">CSS / Tailwind CSS</span>
+                                <span class="text-gray-600 dark:text-gray-400">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">JavaScript</span>
+                                <span class="text-gray-600 dark:text-gray-400">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">PHP / MySQL</span>
+                                <span class="text-gray-600 dark:text-gray-400">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                                <div class="bg-accent dark:bg-accentPurple h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold mb-6 text-center">
+                        <i class="fas fa-user-friends text-accent dark:text-accentPurple mr-2"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 p-3 bg-gray-100 dark:bg-gray-600 rounded-lg">
+                            <i class="fas fa-lightbulb text-accent dark:text-accentPurple"></i>
+                            <span class="font-semibold">Creativity</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-100 dark:bg-gray-600 rounded-lg">
+                            <i class="fas fa-comments text-accent dark:text-accentPurple"></i>
+                            <span class="font-semibold">Communication</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-100 dark:bg-gray-600 rounded-lg">
+                            <i class="fas fa-clock text-accent dark:text-accentPurple"></i>
+                            <span class="font-semibold">Time Management</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-gray-100 dark:bg-gray-600 rounded-lg">
+                            <i class="fas fa-users text-accent dark:text-accentPurple"></i>
+                            <span class="font-semibold">Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-accent dark:bg-accentPurple text-white p-4 rounded-full shadow-lg hover:bg-opacity-80 transition opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

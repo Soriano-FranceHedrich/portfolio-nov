@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Naveen Daphney H. Apigo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#5EEAD4',
+                        accentPurple: '#A78BFA',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-poppins transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                    Naveen Daphney
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Home</a>
+                    <a href="about.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">About</a>
+                    <a href="projects.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Projects</a>
+                    <a href="skills.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Skills</a>
+                    <a href="education.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Education</a>
+                    <a href="contact.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Contact</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 nav-link">Home</a>
+                <a href="about.html" class="block py-2 nav-link">About</a>
+                <a href="projects.html" class="block py-2 nav-link">Projects</a>
+                <a href="skills.html" class="block py-2 nav-link">Skills</a>
+                <a href="education.html" class="block py-2 nav-link">Education</a>
+                <a href="contact.html" class="block py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio / Projects Section -->
+    <section id="projects" class="py-20 px-4 min-h-screen pt-32">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/Creative Branding Kit.jpg" alt="Creative Branding Kit" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Creative Branding Kit</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Company logo and marketing design for a modern brand identity.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Photoshop</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Illustrator</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/Creative Branding Kit.jpg', 'Creative Branding Kit')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/Modern Portfolio Website.png" alt="Modern Portfolio Website" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Modern Portfolio Website</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Web design using HTML and Tailwind CSS with responsive layout.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Tailwind</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/Modern Portfolio Website.png', 'Modern Portfolio Website')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/Event Poster & Flyer Designs.jpg" alt="Event Poster & Flyer Designs" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Event Poster & Flyer Designs</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Print-ready graphic works for events and marketing campaigns.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Photoshop</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Canva</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/Event Poster & Flyer Designs.jpg', 'Event Poster & Flyer Designs')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/UI.png" alt="UI/UX Prototype" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">UI/UX Prototype</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">App design using Figma with user-centered interface.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Figma</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">UI/UX</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/UI.png', 'UI/UX Prototype')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/Social Media Graphics.png" alt="Social Media Graphics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Social Media Graphics</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Engaging social media content and visual campaigns.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Canva</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Photoshop</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/Social Media Graphics.png', 'Social Media Graphics')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-gray-200 dark:bg-gray-700 h-48 rounded-t-lg overflow-hidden">
+                        <img src="photos/Web Application Design.png" alt="Web Application Design" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-b-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Web Application Design</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Full-stack web application with modern design principles.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <button onclick="openProjectModal('photos/Web Application Design.png', 'Web Application Design')" class="btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition inline-block cursor-pointer">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-75 dark:bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-2xl font-bold z-10 bg-white dark:bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
+                &times;
+            </button>
+            <div class="p-6">
+                <h3 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-900 dark:text-white"></h3>
+                <div class="w-full">
+                    <img id="modalImage" src="" alt="" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-accent dark:bg-accentPurple text-white p-4 rounded-full shadow-lg hover:bg-opacity-80 transition opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Project Modal Functions
+        function openProjectModal(imageSrc, title) {
+            const modal = document.getElementById('projectModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            
+            modalImage.src = imageSrc;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+        
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+        
+        // Close modal when clicking outside the image
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeProjectModal();
+            }
+        });
+    </script>
+</body>
+</html>
+

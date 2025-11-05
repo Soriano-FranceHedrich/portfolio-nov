@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Naveen Daphney H. Apigo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#5EEAD4',
+                        accentPurple: '#A78BFA',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-poppins transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                    Naveen Daphney
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Home</a>
+                    <a href="about.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">About</a>
+                    <a href="projects.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Projects</a>
+                    <a href="skills.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Skills</a>
+                    <a href="education.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Education</a>
+                    <a href="contact.html" class="nav-link hover:text-accent dark:hover:text-accentPurple transition">Contact</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 nav-link">Home</a>
+                <a href="about.html" class="block py-2 nav-link">About</a>
+                <a href="projects.html" class="block py-2 nav-link">Projects</a>
+                <a href="skills.html" class="block py-2 nav-link">Skills</a>
+                <a href="education.html" class="block py-2 nav-link">Education</a>
+                <a href="contact.html" class="block py-2 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-50 dark:bg-gray-800 min-h-screen pt-32">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-semibold">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-accent dark:focus:ring-accentPurple transition" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-semibold">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-accent dark:focus:ring-accentPurple transition" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-semibold">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-accent dark:focus:ring-accentPurple transition" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full px-6 py-3 rounded-lg font-semibold transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div data-aos="fade-left">
+                    <div class="space-y-6">
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4">
+                                    <i class="fas fa-envelope text-accent dark:text-accentPurple text-xl"></i>
+                                    <a href="mailto:naveendaphney@example.com" class="text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accentPurple transition">
+                                        naveendaphney@example.com
+                                    </a>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <i class="fas fa-map-marker-alt text-accent dark:text-accentPurple text-xl"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        Paradima Compound, San Jose, Calamba City, Laguna
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-4">Follow Me</h3>
+                            <div class="flex gap-4">
+                                <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="mailto:naveendaphney@example.com" class="social-icon" target="_blank" aria-label="Gmail">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" target="_blank" aria-label="Twitter X">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-accent dark:bg-accentPurple text-white p-4 rounded-full shadow-lg hover:bg-opacity-80 transition opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
